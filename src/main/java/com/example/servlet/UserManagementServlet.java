@@ -6,13 +6,15 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
+
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.example.dao.UserDao;
 import com.example.model.User;
+
+import jakarta.servlet.annotation.WebServlet;
 
 @WebServlet("/manage_users")
 public class UserManagementServlet extends HttpServlet {

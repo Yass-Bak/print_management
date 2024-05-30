@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
+
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -16,6 +16,8 @@ import javax.servlet.http.HttpSession;
 import com.example.dao.TaskDao;
 import com.example.model.Task;
 import com.example.model.User;
+
+import jakarta.servlet.annotation.WebServlet;
 
 @WebServlet("/agent_dashboard")
 public class AgentDashboardServlet extends HttpServlet {
