@@ -18,7 +18,7 @@ import com.example.model.Subject;
 import com.example.model.User;
 
 import jakarta.servlet.annotation.WebServlet;
-@SuppressWarnings("serial")
+
 @WebServlet("/teacher_dashboard")
 public class TeacherDashboardServlet extends HttpServlet {
     private Connection connection;

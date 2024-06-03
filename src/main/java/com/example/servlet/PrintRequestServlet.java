@@ -21,7 +21,7 @@ import com.example.model.PrintRequest;
 import com.example.model.User;
 
 import jakarta.servlet.annotation.WebServlet;
-@SuppressWarnings("serial")
+
 @WebServlet("/request_print")
 public class PrintRequestServlet extends HttpServlet {
     private Connection connection;

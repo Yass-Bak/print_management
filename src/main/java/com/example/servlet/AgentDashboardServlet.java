@@ -19,7 +19,7 @@ import com.example.model.User;
 
 import jakarta.servlet.annotation.WebServlet;
 
-@SuppressWarnings("serial")
+
 @WebServlet("/agent_dashboard")
 public class AgentDashboardServlet extends HttpServlet {
     private Connection connection;

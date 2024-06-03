@@ -15,7 +15,7 @@ import com.example.dao.UserDao;
 import com.example.model.User;
 
 import jakarta.servlet.annotation.WebServlet;
-@SuppressWarnings("serial")
+
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
     private Connection connection;
