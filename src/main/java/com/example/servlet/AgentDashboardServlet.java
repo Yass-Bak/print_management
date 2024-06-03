@@ -19,6 +19,7 @@ import com.example.model.User;
 
 import jakarta.servlet.annotation.WebServlet;
 
+@SuppressWarnings("serial")
 @WebServlet("/agent_dashboard")
 public class AgentDashboardServlet extends HttpServlet {
     private Connection connection;
@@ -27,7 +28,7 @@ public class AgentDashboardServlet extends HttpServlet {
     public void init() throws ServletException {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/print_management", "root", "password");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/print_management", "root", "");
         } catch (ClassNotFoundException | SQLException e) {
             throw new ServletException(e);
         }

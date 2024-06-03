@@ -21,7 +21,7 @@ import com.example.model.PrintRequest;
 import com.example.model.User;
 
 import jakarta.servlet.annotation.WebServlet;
-
+@SuppressWarnings("serial")
 @WebServlet("/request_print")
 public class PrintRequestServlet extends HttpServlet {
     private Connection connection;
@@ -30,7 +30,7 @@ public class PrintRequestServlet extends HttpServlet {
     public void init() throws ServletException {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/print_management", "root", "password");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/print_management", "root", "");
         } catch (ClassNotFoundException | SQLException e) {
             throw new ServletException(e);
         }

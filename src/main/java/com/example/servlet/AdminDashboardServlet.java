@@ -12,6 +12,7 @@ import com.example.model.User;
 
 import jakarta.servlet.annotation.WebServlet;
 
+@SuppressWarnings("serial")
 @WebServlet("/admin_dashboard")
 public class AdminDashboardServlet extends HttpServlet {
     @Override
