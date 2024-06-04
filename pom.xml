@@ -3,7 +3,7 @@
     <groupId>com.example</groupId>
     <artifactId>PrintManagement</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>war</packaging>
   <build>
          <plugins>
         <plugin>

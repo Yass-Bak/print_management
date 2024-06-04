@@ -34,7 +34,7 @@
     <form action="manage_users" method="post">
         <input type="hidden" name="action" value="deactivate">
         <label for="user_id">User ID:</label>
-        <input type="number" id="user_id" name="user_id" required>
+        <input type="number" id="user_id2" name="user_id2" required>
         <button type="submit">Deactivate User</button>
     </form>
     <a href="logout">Logout</a>
